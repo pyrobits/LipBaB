@@ -263,13 +263,15 @@ def branch(p,sgn):
 
 #Loads the weights and biases of the network from .npy files
 
-#weights and biases obtained from MLPClassifier(Scipy)
 wts=np.load('saved_networks/SDnet_(10,15,10,3)_weights.npy',allow_pickle=True)
 bs=np.load('saved_networks/SDnet_(10,15,10,3)_biases.npy',allow_pickle=True)
 
 #weights is a list of weight matrices
 #weights[0] must be NULL
 #weights[l] must be a 2d-list of size [dim(layer l)*dim(layer l-1)]
+#biases is a list of bias vectors
+#bias[0] must be NULL
+#bias[l] is a list
 
 #used to get the weights and biases in the desirable format
 #may be  commented if already in the correct format
@@ -377,7 +379,7 @@ if len(p.ast_ns)==0:
     glb=p.Lub
 
 while(True):
-    #if (time.time() - startTime)>=300: #(for running with time limit in seconds)
+    #if (time.time() - startTime)>=300: #(for running with a time limit(in seconds))
         #break
     if(pq.empty()==True):
         break
