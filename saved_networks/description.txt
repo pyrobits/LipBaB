@@ -1,0 +1,1 @@
+These are .npy files containing weights and biases of networks trained with MLPClassifier(Scikit-learn) on synthetic datasets.
