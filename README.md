@@ -11,4 +11,4 @@ A branch and bound framework to compute the local Lipschitz constant of ReLU fee
 
 ## Dependencies
 
-* Python 3.x, NumPy, CVXOPT solver
+* Python 3.x, NumPy, CVXOPT with GLPK Linear Programming solver
